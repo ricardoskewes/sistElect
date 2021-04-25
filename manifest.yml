@@ -1,0 +1,14 @@
+applications:
+- buildpack: nodejs_buildpack
+  command: npm start
+  domain: null
+  env:
+    OPTIMIZE_MEMORY: true
+  host: null
+  instances: 1
+  name: nodexpresstest
+  random-route: true
+  routes:
+  - route: nodexpresstest.us-south.cf.appdomain.cloud
+  timeout: 180
+  memory: 128M

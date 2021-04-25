@@ -1,0 +1,23 @@
+<script type="text/javascript" src="ui.js"></script>
+
+<head></head>
+<body>
+    <!--
+        Estos botones serán reemplazados con códigos QR.
+        Cada código tendrá la ID de la casilla correspondiente, misma que se usará para
+        pedir información al servidor.
+     -->
+    <div id="seleccion-casilla">
+        <h1 class="seleccion-casilla">Selecciona una casilla:</h1>
+        <button onclick="configuraUsuario(1)" class="seleccion-casilla">Casilla 1</button>
+        <button onclick="configuraUsuario(2)" class="seleccion-casilla">Casilla 2</button>
+        <button onclick="configuraUsuario(3)" class="seleccion-casilla">Casilla 3</button>
+    </div>
+
+    <div id="img-container">
+        <img id="boleta" style="visibility:hidden;">
+    </div>
+    <div id="btn-container"></div>
+
+    <h4 id="contador" style="visibility:hidden;">5</h4>
+</body>
